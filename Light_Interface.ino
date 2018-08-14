@@ -55,11 +55,13 @@ void setup() {
   Serial.begin(9600);
   pinMode(buttonpin, INPUT); //Set buttonpins as INPUTS. 
   pinMode(buttonpin2, INPUT);
+  pinMode(emptypin, INPUT);
   /*pinMode(buttonpin3, INPUT);
   pinMode(emptypin, INPUT);
   pinMode(greenpulsepin, INPUT);*/
   checkpin();
   checkpin2();
+  checkemptypin();
   /*checkpin3();
   checkemptypin();
   checkgreenpin();*/
